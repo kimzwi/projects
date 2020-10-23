@@ -1,0 +1,204 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: IRANSansMobile !important;
+
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    font-family: IRANSans;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+@font-face {
+    font-family: "IRANSansMobile";
+    src: url("../fonts/IRANSansMobile.ttf");
+}
+
+
+header{
+    background-color: white;
+}
+.header-iframe, .footer-iframe{
+    width: 100%;
+    border: 0px;
+}
+.header-iframe{
+    /*position: fixed;*/
+}
+.footer-iframe{
+    height: 21rem;
+}
+.carousel-iframe{
+    width: 100%;
+    border: 0px;
+    /*display: block;*/
+    height: 30rem;
+}
+.digikala-logo{
+    height: 2.5rem;
+    width:  8rem;
+}
+.search-icon, .login-icon, .cart-icon, .menu-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto;
+}
+.search-icon{
+    margin-inline-start: 0.5rem;
+    margin-inline-end: 0.5rem;
+}
+input, input:hover, input:focus{
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    width: 100%;
+    direction: rtl;
+}
+.search-input{
+    background-color: #f0f0f1;
+    border-radius: 0.5rem;
+    color: #474747;
+    height: 2.5rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-inline-end: 0.5rem;
+
+}
+.login {
+    border-radius: 0.5rem;
+    border: 1px solid #e0e0e2;
+    display: flex;
+    flex-direction: row;
+    width: 12rem;
+    margin-inline-start: 0.5rem;
+}
+.header-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.5rem;
+    /*position: fixed;*/
+    /*height: 3rem;*/
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header-wrapper > *{
+    display: flex;
+}
+.login-text{
+    color: #8F8F91;
+    margin: auto;
+}
+.menu-item-container{
+    display: flex;
+    flex-direction: row;
+}
+.menu-items{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    width: 100%;
+}
+.persent-icon{
+    width: 1rem;
+    height: 1rem;
+    margin: auto;
+
+}
+.menu-items > * {
+    margin-inline-start: 1rem;
+}
+.menu-items > p, .menu-item-container > p{
+    color: #8F8F91
+}
+a {
+    text-decoration: none;
+    background: #ffffff;
+    border-bottom: 2px solid transparent;
+}
+.menu-item-container:hover{
+    border-bottom: 2px red solid;
+}
+.banner-image{
+ width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+@media only screen and (max-width: 1000px) {
+    .digikala-logo{
+        width: 25%;
+        height: auto;
+        margin: auto;
+    }
+    .header-wrapper{
+        flex-direction: column;
+    }
+    .header-wrapper > *{
+        flex-direction: column-reverse;
+        margin: auto;
+        width: 100%;
+
+    }
+    .search-input{
+        width: 80%;
+        margin: auto;
+        height: 5.5rem;
+    }
+    .login-text{
+        display: none;
+    }
+    .login{
+        border: 0;
+        margin-inline-start: unset;
+        display: unset;
+    }
+    .menu-items{
+        display: none;
+    }
+    .cart-icon{
+        margin: unset;
+        position: absolute;
+        top:1rem;
+        width: 3rem;
+        height: 3rem;
+        right: 1rem;
+
+    }
+    .login-icon{
+        position: absolute;
+        top:1rem;
+        width: 3rem;
+        height: 3rem;
+        left: 1rem;
+    }
+    .header-iframe{
+        height: 12rem;
+    }
+}
